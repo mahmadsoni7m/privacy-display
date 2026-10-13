@@ -3,6 +3,7 @@ package com.soni.privacydisplay.ui
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Shapes
+import androidx.compose.material3.Surface
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
@@ -44,5 +45,12 @@ private val PrivacyShapes = Shapes(
 /** The app is always dark (black/charcoal, white text, blue accent). */
 @Composable
 fun PrivacyDisplayTheme(content: @Composable () -> Unit) {
-    MaterialTheme(colorScheme = PrivacyColors, shapes = PrivacyShapes, content = content)
+    MaterialTheme(colorScheme = PrivacyColors, shapes = PrivacyShapes) {
+        // Gives every Text a white default color (otherwise titles outside a card are black on black).
+        Surface(
+            color = MaterialTheme.colorScheme.background,
+            contentColor = MaterialTheme.colorScheme.onBackground,
+            content = content,
+        )
+    }
 }

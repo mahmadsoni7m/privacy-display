@@ -185,7 +185,7 @@ fun PrivacyScreen(viewModel: PrivacyViewModel, onOpenSettings: () -> Unit) {
                     colors = SliderDefaults.colors(
                         thumbColor = Accent,
                         activeTrackColor = Accent,
-                        inactiveTrackColor = CharcoalLight,
+                        inactiveTrackColor = MaterialTheme.colorScheme.outline,
                     ),
                     modifier = Modifier
                         .height(48.dp)
