@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Privacy Display</string>
+    <string name="notification_channel_name">Privacy filter</string>
+    <string name="notification_channel_description">Shown while the Privacy Display overlay is active.</string>
+    <string name="notification_title">Privacy Display is active</string>
+    <string name="notification_text">Filter intensity: %1$d%%</string>
+    <string name="notification_text_starting">Starting privacy filter…</string>
+    <string name="notification_action_stop">Stop</string>
+</resources>
