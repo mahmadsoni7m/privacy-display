@@ -4,7 +4,7 @@
 
 Push to `main` or run **Actions > Android Build > Run workflow**. The workflow:
 
-1. checks out the code, installs JDK 17 and the Android SDK,
+1. checks out the code, installs JDK 17 and accepts the licenses of the Android SDK preinstalled on the runner,
 2. installs Gradle 8.9 with caching,
 3. generates the Gradle wrapper if `gradle/wrapper/gradle-wrapper.jar` is missing,
 4. runs `./gradlew --no-daemon assembleDebug`,
